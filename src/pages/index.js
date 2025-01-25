@@ -1,0 +1,74 @@
+import Head from "next/head";
+
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta httpEquiv="content-language" content="en" />
+        <meta name="robots" content="follow, index" />
+        <meta
+          name="google-site-verification"
+          content="UviZELNJ6Xu6G42kgGmKtVzRXpoc61MYCLpWmoV1uzA"
+        />
+        <meta
+          name="p:domain_verify"
+          content="2a1276bd93e5e1054bc5f45a8a1c3823"
+        />
+        <meta name="yandex-verification" content="f603ed602ebfae14" />
+
+        <meta
+          name="facebook-domain-verification"
+          content="kx1oxavnceb5jspahm5exd7a70hd0p"
+        />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="description" content="" key="desc" />
+        <meta content="#ffffff" name="theme-color" />
+        <meta content="" name="position" />
+        <meta name="distribution" content="Global" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="rating" content="General" />
+        <meta name="author" content="Mushfiqur Rahman" />
+        <meta name="owner" content="Mushfiqur Rahman" />
+        <meta name="robots" content="index,follow,noodp,noydir" />
+        <meta name="copyright" content="Copyright © Mushfiqur Rahman" />
+        <meta name="googlebot" content="index, follow" />
+        <meta property="og:type" content="website" />
+        <meta name="msvalidate.01" content="3EA8D19855F5F7D04AEABD2C2A95FA33" />
+        <meta property="og:site_name" content="Mushfiqur Rahman" />
+        <meta
+          property="og:description"
+          content="I am looking for IT Support Engineer job opportunity. I am a dynamic person who is able to adapt with a new technology | IT support."
+        />
+        <meta property="og:title" content="Jashore Installation Service" />
+        <meta property="og:image" content="" />
+        <meta property="fb:app_id" content="" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="628" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="" />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="keywords" content="" />
+        <link href="https://jashoreinstallationservice.com" rel="canonical" />
+        <meta
+          content="https://jashoreinstallationservice.com"
+          property="og:url"
+        />
+        <meta
+          content="Mushfiqur Rahman the python django developer"
+          name="author"
+        />
+        <meta content="Mushfiqur Rahman Portfolio" name="application-name" />
+        <title>Jashore Installation Service</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </Head>
+      <div className=" grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start"></main>
+        <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
+      </div>
+    </>
+  );
+}
