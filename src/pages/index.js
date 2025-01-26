@@ -45,7 +45,10 @@ export default function Home() {
         <meta property="og:site_name" content="Jashore Installation Service" />
         <meta property="og:description" content="" />
         <meta property="og:title" content="Jashore Installation Service" />
-        <meta property="og:image" content="" />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/depyaowh3/image/upload/v1737855025/jashore_installation_service_r3v1sc.png"
+        />
         <meta property="fb:app_id" content="" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="628" />
@@ -53,7 +56,10 @@ export default function Home() {
         <meta name="twitter:site" content="" />
         <meta name="twitter:title" content="jashoreis" />
         <meta name="twitter:description" content="" />
-        <meta name="twitter:image" content="" />
+        <meta
+          name="twitter:image"
+          content="https://res.cloudinary.com/depyaowh3/image/upload/v1737855025/jashore_installation_service_r3v1sc.png"
+        />
         <meta name="keywords" content="" />
         <link href="https://jashoreinstallationservice.com" rel="canonical" />
         <meta
