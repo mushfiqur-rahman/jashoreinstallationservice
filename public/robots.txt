@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.jashoreinstallationservice.com
+Host: https://jashoreinstallationservice.com
 
 # Sitemaps
-Sitemap: https://www.jashoreinstallationservice.com/sitemap.xml
+Sitemap: https://jashoreinstallationservice.com/sitemap.xml
