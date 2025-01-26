@@ -38,10 +38,7 @@ export default function Home() {
         />
         <meta name="googlebot" content="index, follow" />
         <meta property="og:type" content="website" />
-        <meta
-          name="msvalidate.01"
-          content="563bc884327933c6e5b453d8678497f5 "
-        />
+        <meta name="msvalidate.01" content="3EA8D19855F5F7D04AEABD2C2A95FA33" />
         <meta property="og:site_name" content="Jashore Installation Service" />
         <meta property="og:description" content="" />
         <meta property="og:title" content="Jashore Installation Service" />
