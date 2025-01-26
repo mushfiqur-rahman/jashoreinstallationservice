@@ -1,3 +1,4 @@
+import ComingSoon from "@/components/ComingSoon";
 import Head from "next/head";
 
 export default function Home() {
@@ -40,11 +41,18 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta name="msvalidate.01" content="3EA8D19855F5F7D04AEABD2C2A95FA33" />
         <meta property="og:site_name" content="Jashore Installation Service" />
-        <meta property="og:description" content="" />
+        <meta
+          property="og:description"
+          content="যশোর ইন্সটলেশন সার্ভিসের সেবা সমূহঃ সিসি ক্যামেরা সেটাপ এবং মেইন্টিন্যান্স, ইলেকট্রিক লাইনের কাজ, ওয়েব ডেভেলপমেন্ট, মাইক্রোসফট এবং গুগল ওয়ার্ক স্পেস কনফিগারেশন"
+        />
         <meta property="og:title" content="Jashore Installation Service" />
         <meta
           property="og:image"
           content="https://res.cloudinary.com/depyaowh3/image/upload/v1737855025/jashore_installation_service_r3v1sc.png"
+        />
+        <meta
+          property="og:image:alt"
+          content="যশোর ইন্সটলেশন সার্ভিসের সেবা সমূহঃ সিসি ক্যামেরা সেটাপ এবং মেইন্টিন্যান্স, ইলেকট্রিক লাইনের কাজ, ওয়েব ডেভেলপমেন্ট, মাইক্রোসফট এবং গুগল ওয়ার্ক স্পেস কনফিগারেশন"
         />
         <meta property="fb:app_id" content="" />
         <meta property="og:image:width" content="1200" />
@@ -71,10 +79,12 @@ export default function Home() {
         <title>Jashore Installation Service</title>
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
-      <div className=" grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start"></main>
-        <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
-      </div>
+      <>
+        <main>
+          <ComingSoon />
+        </main>
+        <footer></footer>
+      </>
     </>
   );
 }
