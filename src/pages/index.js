@@ -54,7 +54,7 @@ export default function Home() {
           property="og:image:alt"
           content="যশোর ইন্সটলেশন সার্ভিসের সেবা সমূহঃ সিসি ক্যামেরা সেটাপ এবং মেইন্টিন্যান্স, ইলেকট্রিক লাইনের কাজ, ওয়েব ডেভেলপমেন্ট, মাইক্রোসফট এবং গুগল ওয়ার্ক স্পেস কনফিগারেশন"
         />
-        <meta property="fb:app_id" content="" />
+        <meta property="fb:app_id" content="959794726246585" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="628" />
         <meta name="twitter:card" content="summary_large_image" />
