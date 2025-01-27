@@ -21,7 +21,7 @@ export default function Home() {
 
         <meta
           name="facebook-domain-verification"
-          content="kx1oxavnceb5jspahm5exd7a70hd0p"
+          content="h5fuk99pcbco5lw2guzjhc4vq04rdc"
         />
         <link rel="manifest" href="/manifest.json" />
         <meta name="description" content="" key="desc" />
