@@ -5,10 +5,36 @@ import {
   FaYoutube,
   FaLinkedinIn,
 } from "react-icons/fa";
+import { MdCameraswitch } from "react-icons/md";
 
 function ComingSoon() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 px-4">
+    <div className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 px-4">
+      {/* Camera Surveillance GIFs */}
+      <motion.div
+        className="absolute top-4 left-4"
+        animate={{ rotate: [0, 20, -20, 0] }}
+        transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+      >
+        <img
+          src="/service/cctv.gif"
+          alt="Camera Surveillance Left"
+          className="w-12 h-12"
+        />
+      </motion.div>
+      <motion.div
+        className="absolute top-4 right-4"
+        animate={{ rotate: [0, -20, 20, 0] }}
+        transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+      >
+        <img
+          src="/service/ipcamera.gif"
+          alt="Camera Surveillance Right"
+          className="w-12 h-12"
+        />
+      </motion.div>
+
+      {/* Main Content */}
       <motion.div
         className="text-center"
         initial={{ opacity: 0, scale: 0.5 }}
@@ -31,6 +57,8 @@ function ComingSoon() {
           Stay tuned for something amazing!
         </motion.p>
       </motion.div>
+
+      {/* Social Media Links */}
       <div className="flex space-x-6 mt-8">
         <motion.a
           href="https://www.facebook.com/JashoreInstallationService"

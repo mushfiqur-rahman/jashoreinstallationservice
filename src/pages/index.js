@@ -58,7 +58,7 @@ export default function Home() {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="628" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="" />
+        <meta name="twitter:site" content="Jashore Installation Service" />
         <meta name="twitter:title" content="jashoreis" />
         <meta name="twitter:description" content="" />
         <meta
