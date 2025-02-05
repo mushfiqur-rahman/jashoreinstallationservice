@@ -24,7 +24,11 @@ export default function Home() {
           content="h5fuk99pcbco5lw2guzjhc4vq04rdc"
         />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="description" content="" key="desc" />
+        <meta
+          name="description"
+          key="desc"
+          content="Google Workspace, Office 365, DNS Management, CC Camera Install and Maintenance, Electric, Office Network Service Provider Remotely or Onsite"
+        />
         <meta content="#ffffff" name="theme-color" />
         <meta content="" name="position" />
         <meta name="distribution" content="Global" />
@@ -38,12 +42,12 @@ export default function Home() {
           content="Copyright © Jashore Installation Service"
         />
         <meta name="googlebot" content="index, follow" />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="business portfolio website" />
         <meta name="msvalidate.01" content="3EA8D19855F5F7D04AEABD2C2A95FA33" />
         <meta property="og:site_name" content="Jashore Installation Service" />
         <meta
           property="og:description"
-          content="যশোর ইন্সটলেশন সার্ভিসের সেবা সমূহঃ সিসি ক্যামেরা সেটাপ এবং মেইন্টিন্যান্স, ইলেকট্রিক লাইনের কাজ, ওয়েব ডেভেলপমেন্ট, মাইক্রোসফট এবং গুগল ওয়ার্ক স্পেস কনফিগারেশন"
+          content="Google Workspace, Office 365, DNS Management, CC Camera Install and Maintenance, Electric, Office Network Install, website Develop & Maintenance. Service Provider Remotely or Onsite"
         />
         <meta property="og:title" content="Jashore Installation Service" />
         <meta
@@ -52,7 +56,7 @@ export default function Home() {
         />
         <meta
           property="og:image:alt"
-          content="যশোর ইন্সটলেশন সার্ভিসের সেবা সমূহঃ সিসি ক্যামেরা সেটাপ এবং মেইন্টিন্যান্স, ইলেকট্রিক লাইনের কাজ, ওয়েব ডেভেলপমেন্ট, মাইক্রোসফট এবং গুগল ওয়ার্ক স্পেস কনফিগারেশন"
+          content="Google Workspace, Office 365, DNS Management, CC Camera Install and Maintenance, Electric, Office Network Install, website Develop & Maintenance. Service Provider Remotely or Onsite"
         />
         <meta property="fb:app_id" content="1171222251317643" />
         <meta property="og:image:width" content="1200" />
@@ -60,7 +64,10 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="Jashore Installation Service" />
         <meta name="twitter:title" content="jashoreis" />
-        <meta name="twitter:description" content="" />
+        <meta
+          name="twitter:description"
+          content="Google Workspace, Office 365, DNS Management, CC Camera Install and Maintenance, Electric, Office Network Install, website Develop & Maintenance. Service Provider Remotely or Onsite"
+        />
         <meta
           name="twitter:image"
           content="https://res.cloudinary.com/depyaowh3/image/upload/v1737855025/jashore_installation_service_r3v1sc.png"
@@ -72,10 +79,7 @@ export default function Home() {
           property="og:url"
         />
 
-        <meta
-          content="Jashore Installation Service - যশোর ইন্সটলেশন সার্ভিস"
-          name="application-name"
-        />
+        <meta content="IT Service Near at You" name="application-name" />
         <title>Jashore Installation Service</title>
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
