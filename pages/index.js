@@ -72,7 +72,10 @@ export default function Home() {
           name="twitter:image"
           content="https://res.cloudinary.com/depyaowh3/image/upload/v1737855025/jashore_installation_service_r3v1sc.png"
         />
-        <meta name="keywords" content="" />
+        <meta
+          name="keywords"
+          content="app development, cc camera jashore, ip camera jashore, electrician jashore, ইলেকট্রিশিয়ান যশোর, ওয়েব সাইট যশোর, সিসি ক্যামেরা যশোর, আইটি সার্ভিস যশোর"
+        />
         <link href="https://jashoreinstallationservice.com" rel="canonical" />
         <meta
           content="https://jashoreinstallationservice.com"

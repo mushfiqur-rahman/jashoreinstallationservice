@@ -1,5 +1,6 @@
+import SiteSchema from "@/components/SiteName";
 import "@/styles/globals.css";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { ThemeProvider } from "next-themes";
 
 export default function App({ Component, pageProps }) {
@@ -10,8 +11,9 @@ export default function App({ Component, pageProps }) {
       enableSystem
       disableTransitionOnChange
     >
+      <SiteSchema />
       <Component {...pageProps} />
-      <GoogleTagManager gtmId="G-SZB80V6SBQ" />
+      <GoogleAnalytics gtmId="G-SZB80V6SBQ" />
     </ThemeProvider>
   );
 }
