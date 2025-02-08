@@ -1,6 +1,6 @@
 import SiteSchema from "@/components/SiteName";
 import "@/styles/globals.css";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { ThemeProvider } from "next-themes";
 
 export default function App({ Component, pageProps }) {
@@ -13,7 +13,8 @@ export default function App({ Component, pageProps }) {
     >
       <SiteSchema />
       <Component {...pageProps} />
-      <GoogleTagManager gtmId="G-SZB80V6SBQ" />
+      <GoogleAnalytics gaId="G-SZB80V6SBQ" />
+      <GoogleTagManager gtmId="GTM-NDMM4NHD" />
     </ThemeProvider>
   );
 }
