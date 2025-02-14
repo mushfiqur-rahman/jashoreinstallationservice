@@ -1,213 +1,119 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
-
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { motion, AnimatePresence } from "framer-motion";
+import LogoImg from "../public/logo.png";
 import Image from "next/image";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // State for mobile menu toggle
 
-  const [shadow, setShadow] = useState(false);
-  const [linkColor, setlinkColor] = useState("#1f2937");
-
-  // For Mobile nav
-  const handleNav = () => {
-    setNav(!nav);
+  // Animation variants for Framer Motion
+  const menuVariants = {
+    open: {
+      opacity: 1,
+      y: 0,
+      transition: { staggerChildren: 0.1, delayChildren: 0.2 },
+    },
+    closed: { opacity: 0, y: "-100%" },
   };
 
-  // Change Nav color
-  useEffect(() => {
-    const handleShadow = () => {
-      if (window.scrollY >= 90) {
-        setShadow(true);
-      } else {
-        setShadow(false);
-      }
-    };
-    window.addEventListener("scroll", handleShadow);
-  }, []);
+  const itemVariants = {
+    open: { opacity: 1, y: 0 },
+    closed: { opacity: 0, y: -20 },
+  };
+
+  const links = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Services", href: "/service" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "/contact" },
+  ];
 
   return (
-    <div
-      className={
-        shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] bg-white dark:bg-black/50"
-          : "fixed w-full h-20 z-[100]"
-      }
-    >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 cursor-pointer ">
-        <Link href="/">
-          <div className="text-3xl font-serif dark:text-green-500">
-            <Image src={}/>
+    <nav className="bg-white shadow-md w-full fixed top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo */}
+          <div className="flex-shrink-0">
+            <Link href="/" className="text-xl font-bold text-gray-900">
+              <Image src={LogoImg} alt="LogoImg" width={40} height={40} />
+            </Link>
           </div>
-        </Link>
 
-        <div className="flex justify-between items-center">
-          <ul
-            style={{ color: `${linkColor}` }}
-            className="hidden md:flex "
-            role="menu"
-            aria-label="My Account"
+          {/* Desktop Menu */}
+          <div className="hidden md:flex space-x-4">
+            {links.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium uppercase"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-700 hover:text-gray-900 focus:outline-none"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                {isOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial="closed"
+            animate="open"
+            exit="closed"
+            variants={menuVariants}
+            className="md:hidden bg-white shadow-lg"
           >
-            <li
-              className="ml-10 font-bold hover:border-b dark:text-green-500"
-              role="none"
-            >
-              <Link href="/" role="menuitem">
-                Home
-              </Link>
-            </li>
-
-            <li
-              className="ml-10 font-bold hover:border-b dark:text-green-500"
-              role="none"
-            >
-              <Link href="/#about" role="menuitem">
-                About
-              </Link>
-            </li>
-
-            <li
-              className="ml-10 font-bold hover:border-b dark:text-green-500"
-              role="none"
-            >
-              <Link href="/#skills" role="menuitem">
-                Skills
-              </Link>
-            </li>
-
-            <li
-              className="ml-10 font-bold hover:border-b dark:text-green-500"
-              role="none"
-            >
-              <Link href="/#project" role="menuitem">
-                Project
-              </Link>
-            </li>
-
-            <li
-              className="ml-10 font-bold hover:border-b dark:text-green-500"
-              role="none"
-            >
-              <Link href="/#edu&exp" role="menuitem">
-                Edu&Exp
-              </Link>
-            </li>
-
-            <li
-              className="ml-10 font-bold hover:border-b dark:text-green-500"
-              role="none"
-            >
-              <Link href="/contact" role="menuitem">
-                Contact
-              </Link>
-            </li>
-          </ul>
-          <div className="p-4">{renderThemeChanger()}</div>
-          <div onClick={handleNav} className="md:hidden dark:text-white">
-            <AiOutlineMenu />
-          </div>
-        </div>
-      </div>
-
-      <div
-        className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
-        }
-      >
-        <div
-          className={
-            nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen p-10 ease-in duration-500 bg-white dark:bg-black/50"
-              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
-          }
-        >
-          <div>
-            <div className="flex w-full items-center justify-between cursor-pointer">
-              <Link href="/">
-                <div className="text-3xl font-serif dark:text-green-500">
-                  <h2>Mushfiq</h2>
-                </div>
-              </Link>
-              <div
-                onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer bg-black/30 text-white"
-              >
-                <AiOutlineClose />
-              </div>
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              {links.map((link) => (
+                <motion.div key={link.name} variants={itemVariants}>
+                  <Link
+                    href={link.href}
+                    className="block text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    {link.name}
+                  </Link>
+                </motion.div>
+              ))}
             </div>
-            <div className="py-4 flex flex-col cursor-pointer">
-              <ul
-                className="uppercase"
-                style={{ color: `${linkColor}` }}
-                role="menu"
-                aria-label="My Account"
-              >
-                <li
-                  onClick={() => setNav(false)}
-                  className="py-4 font-bold hover:border-b dark:text-green-500"
-                  role="none"
-                >
-                  <Link href="/" role="menuitem">
-                    Home
-                  </Link>
-                </li>
-
-                <li
-                  onClick={() => setNav(false)}
-                  className="py-4 font-bold hover:border-b dark:text-green-500"
-                  role="none"
-                >
-                  <Link href="/#about" role="menuitem">
-                    About
-                  </Link>
-                </li>
-
-                <li
-                  onClick={() => setNav(false)}
-                  className="py-4 font-bold hover:border-b dark:text-green-500"
-                  role="none"
-                >
-                  <Link href="/#skills" role="menuitem">
-                    Skills
-                  </Link>
-                </li>
-
-                <li
-                  onClick={() => setNav(false)}
-                  className="py-4 font-bold hover:border-b dark:text-green-500"
-                  role="none"
-                >
-                  <Link href="/#project" role="menuitem">
-                    Project
-                  </Link>
-                </li>
-
-                <li
-                  onClick={() => setNav(false)}
-                  className="py-4 font-bold hover:border-b dark:text-green-500"
-                  role="none"
-                >
-                  <Link href="/#edu&exp" role="menuitem">
-                    Edu&Exp
-                  </Link>
-                </li>
-
-                <li
-                  onClick={() => setNav(false)}
-                  className="py-4 font-bold hover:border-b dark:text-green-500"
-                  role="none"
-                >
-                  <Link href="/contact" role="menuitem">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </nav>
   );
 };
 

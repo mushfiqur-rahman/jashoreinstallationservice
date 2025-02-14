@@ -1,4 +1,4 @@
-import ComingSoon from "@/components/ComingSoon";
+import Banner from "@/components/Banner";
 import Head from "next/head";
 
 export default function Home() {
@@ -87,10 +87,7 @@ export default function Home() {
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <>
-        <main>
-          <ComingSoon />
-        </main>
-        <footer></footer>
+        <Banner />
       </>
     </>
   );

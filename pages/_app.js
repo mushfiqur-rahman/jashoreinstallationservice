@@ -1,20 +1,20 @@
-import SiteSchema from "@/components/SiteName";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import "@/styles/globals.css";
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
-import { ThemeProvider } from "next-themes";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function App({ Component, pageProps }) {
   return (
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="system"
-      enableSystem
-      disableTransitionOnChange
-    >
-      <SiteSchema />
+    <main className={poppins.className}>
+      <Navbar />
       <Component {...pageProps} />
-      <GoogleAnalytics gaId="G-SZB80V6SBQ" />
-      <GoogleTagManager gtmId="GTM-NDMM4NHD" />
-    </ThemeProvider>
+      <Footer />
+    </main>
   );
 }
