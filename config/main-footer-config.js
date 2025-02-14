@@ -16,10 +16,22 @@ const mainFooterConfig = {
     { title: "Contact", slug: "/contact" },
   ],
   socials: [
-    { name: "Facebook", url: "https://facebook.com", icon: FaFacebook },
-    { name: "Linkedin ", url: "https://github.com/timtbdev", icon: FaLinkedin },
-    { name: "Twitter", url: "https://instagram.com", icon: FaXTwitter },
-    { name: "Youtube", url: "https://youtube.com", icon: FaYoutube },
+    {
+      name: "Facebook",
+      url: "https://www.facebook.com/JashoreInstallationService",
+      icon: FaFacebook,
+    },
+    {
+      name: "Linkedin ",
+      url: "https://www.linkedin.com/company/jashore-installation-service",
+      icon: FaLinkedin,
+    },
+    { name: "Twitter", url: "https://x.com/jashoreis", icon: FaXTwitter },
+    {
+      name: "Youtube",
+      url: "https://www.youtube.com/@jashore-installation-service",
+      icon: FaYoutube,
+    },
   ],
   legals: [
     { title: "Terms", slug: "/terms" },
