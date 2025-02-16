@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jashoreinstallationservice.com
+
+# Sitemaps
+Sitemap: https://jashoreinstallationservice.com/sitemap.xml
