@@ -1,34 +1,37 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Shield, Clock, Award, Users } from "lucide-react";
+import { FaShieldAlt, FaClock, FaAward, FaUsers } from "react-icons/fa";
 
 const reasons = [
   {
-    icon: <Shield className="w-12 h-12" />,
+    icon: <FaShieldAlt className="w-12 h-12" />,
     title: "Trusted Service",
-    description: "Over 10 years of experience in providing reliable installation services."
+    description:
+      "Over 10 years of experience in providing reliable installation services.",
   },
   {
-    icon: <Clock className="w-12 h-12" />,
+    icon: <FaClock className="w-12 h-12" />,
     title: "24/7 Support",
-    description: "Round-the-clock technical support and maintenance services."
+    description: "Round-the-clock technical support and maintenance services.",
   },
   {
-    icon: <Award className="w-12 h-12" />,
+    icon: <FaAward className="w-12 h-12" />,
     title: "Certified Experts",
-    description: "Team of certified professionals with extensive industry knowledge."
+    description:
+      "Team of certified professionals with extensive industry knowledge.",
   },
   {
-    icon: <Users className="w-12 h-12" />,
+    icon: <FaUsers className="w-12 h-12" />,
     title: "Customer Satisfaction",
-    description: "High customer satisfaction rate with quality service delivery."
-  }
+    description:
+      "High customer satisfaction rate with quality service delivery.",
+  },
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,9 +40,10 @@ export default function WhyChooseUs() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            We take pride in delivering exceptional service quality and maintaining high professional standards in all our work.
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Us</h2>
+          <p className="text-lg max-w-3xl mx-auto">
+            We take pride in delivering exceptional service quality and
+            maintaining high professional standards in all our work.
           </p>
         </motion.div>
 
@@ -51,13 +55,13 @@ export default function WhyChooseUs() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-lg p-8 text-center shadow-lg hover:shadow-xl transition-shadow"
+              className="rounded-lg p-8 text-center shadow-lg hover:shadow-xl transition-shadow"
             >
               <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 text-primary mb-6">
                 {reason.icon}
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">{reason.title}</h3>
-              <p className="text-gray-600">{reason.description}</p>
+              <h3 className="text-xl font-semibold mb-3">{reason.title}</h3>
+              <p>{reason.description}</p>
             </motion.div>
           ))}
         </div>

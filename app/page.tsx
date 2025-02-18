@@ -1,14 +1,14 @@
-import Banner from "@/components/Banner";
 import About from "@/components/About";
-import WhyChooseUs from "@/components/WhyChooseUs";
+import Hero from "@/components/Hero";
+import PreviousWork from "@/components/PreviousWork";
 import TeamMembers from "@/components/TeamMembers";
 import Testimonials from "@/components/Testimonials";
-import PreviousWork from "@/components/PreviousWork";
+import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Banner />
+      <Hero />
       <About />
       <WhyChooseUs />
       <TeamMembers />

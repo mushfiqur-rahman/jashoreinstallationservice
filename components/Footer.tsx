@@ -1,168 +1,121 @@
 import Link from "next/link";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { FiFacebook, FiLinkedin } from "react-icons/fi";
+import { BsTwitterX, BsYoutube } from "react-icons/bs";
 
-export default function Footer() {
-  const currentYear = new Date().getFullYear();
+const Footer = () => {
+  const current = new Date();
+  const date = `${current.getFullYear()}`;
 
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div>
-            <h3 className="text-2xl font-bold mb-4">JIS</h3>
-            <p className="text-gray-400 mb-4">
-              Professional installation services in Jashore, Bangladesh. Your
-              trusted partner for CC Camera, Electrical Work, Solar Panels, and
-              IT Solutions.
+    <>
+      <footer>
+        {/* Large Footer */}
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-8 py-12 px-6 md:px-12">
+          {/* Logo and Description (2 cols) */}
+          <div className="md:col-span-2">
+            <h2 className="text-2xl font-bold">Jashore Installation Service</h2>
+            <p className="mt-2">
+              Providing top-notch installation services for security systems,
+              electrical work, and IT solutions.
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Menu Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <h3 className="text-xl font-semibold mb-4">Menu</h3>
             <ul className="space-y-2">
               <li>
-                <Link
-                  href="/"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Home
-                </Link>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <Link
-                  href="/about"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  About Us
-                </Link>
+                <Link href="/service">Service</Link>
               </li>
               <li>
-                <Link
-                  href="/services"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Services
-                </Link>
+                <Link href="/blog">Blog</Link>
               </li>
               <li>
-                <Link
-                  href="/contact"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Contact
-                </Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
+            <h3 className="text-xl font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/services/cc-camera"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  CC Camera Installation
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/electrical"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Electrical Work
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/solar"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Solar Panel Setup
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/it-consultant"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  IT Consultancy
-                </Link>
-              </li>
+              <li>CC Camera</li>
+              <li>IP Camera</li>
+              <li>Electric Work</li>
+              <li>Solar System</li>
+              <li>Website Development</li>
+              <li>Apps Development</li>
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* Legal Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Legal</h4>
+            <h3 className="text-xl font-semibold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link
-                  href="/privacy-policy"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Privacy Policy
-                </Link>
+                <Link href="/privacy-policy">Privacy Policy</Link>
               </li>
               <li>
-                <Link
-                  href="/terms"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/refund-policy"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Refund Policy
-                </Link>
+                <Link href="/terms">Terms of Service</Link>
               </li>
             </ul>
           </div>
-        </div>
 
-        {/* Bottom Footer */}
-        <div className="mt-12 pt-8 border-t border-gray-800">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
-              © {currentYear} Jashore Installation Service. All rights reserved.
-            </p>
-            <div className="flex space-x-4 mt-4 md:mt-0">
-              <Link
-                href="https://www.facebook.com/JashoreInstallationService"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Facebook size={20} />
-              </Link>
+          {/* Social Links */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
+            <div className="flex space-x-4">
               <Link
                 href="https://www.linkedin.com/company/jashore-installation-service"
-                className="text-gray-400 hover:text-white transition-colors"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="linkedin"
               >
-                <Linkedin size={20} />
+                <FiLinkedin size={24} />
               </Link>
+              <Link
+                href="https://www.facebook.com/JashoreInstallationService"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="facebook"
+              >
+                <FiFacebook size={24} />
+              </Link>
+
               <Link
                 href="https://x.com/jashoreis"
-                className="text-gray-400 hover:text-white transition-colors"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="x"
               >
-                <Twitter size={20} />
+                <BsTwitterX size={24} />
               </Link>
               <Link
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
+                href="https://www.youtube.com/@jashore-installation-service"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="youtube"
               >
-                <Instagram size={20} />
+                <BsYoutube size={24} />
               </Link>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+
+        {/* Small Footer */}
+        <div className="bg-indigo-600 text-center py-4">
+          <p>
+            &copy; Copyright 2024 - {date}. Jashore Installation Service. All
+            rights reserved.
+          </p>
+        </div>
+      </footer>
+    </>
   );
-}
+};
+
+export default Footer;
