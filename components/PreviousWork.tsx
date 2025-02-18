@@ -80,7 +80,7 @@ const PreviousWork = () => {
                   />
                   <div className="absolute inset-0  bg-opacity-40 transition-opacity duration-300 opacity-0 group-hover:opacity-100" />
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0 bg-gradient-to-t from-black to-transparent">
+                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0 ">
                   <span className="inline-block px-3 py-1 bg-primary/90 rounded-full text-sm mb-2">
                     {project.category}
                   </span>
