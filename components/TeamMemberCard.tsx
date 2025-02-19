@@ -1,5 +1,6 @@
 import React from "react";
-import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa"; // Import social icons
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 
 // Define the type for the team member data
 interface TeamMember {
@@ -45,7 +46,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-700"
           >
-            <FaTwitter className="w-6 h-6" />
+            <BsTwitterX className="w-6 h-6" />
           </a>
         )}
         {member.socialLinks.linkedin && (

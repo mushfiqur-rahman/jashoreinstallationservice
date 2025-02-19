@@ -13,6 +13,7 @@ import {
 import { PiSecurityCameraBold } from "react-icons/pi";
 import { FiZap } from "react-icons/fi";
 import { LuMonitorSmartphone } from "react-icons/lu";
+import Head from "next/head";
 
 const services = [
   {
@@ -149,10 +150,22 @@ const services = [
   },
 ];
 
-const service = () => {
+const service: React.FC = () => {
   return (
     <>
-      <div className="min-h-screen bg-gray-50 pt-20">
+      <Head>
+        <title>Service</title>
+        <link rel="canonical" href="/service" />
+        <meta
+          name="description"
+          content="CC Camera Install and Maintenance, Electric, Office Network Install, Solar System, website Develop & Maintenance. Service Provider Remotely or Onsite."
+        />
+        <meta
+          name="keywords"
+          content="CC Camera, CCTV, Solar Panel, solar system, ips setup, ips battery jashore, solar mistri jashore, elactrician jashore, সোলার প্যানেল যশোর, সিসি ক্যামেরা যশোর, "
+        />
+      </Head>
+      <div className="min-h-screen pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -160,45 +173,39 @@ const service = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold  mb-4">
               Our Services
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto">
               Comprehensive installation and technology solutions for your
               business needs
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <motion.div
+            {services.map((service) => (
+              <div
                 key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <div className="p-8">
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-lg bg-primary/10 text-primary mb-6">
                     {service.icon}
                   </div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                  <h3 className="text-2xl font-semibold mb-4">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 mb-6">{service.description}</p>
+                  <p className=" mb-6">{service.description}</p>
                   <div className="space-y-3">
                     {service.features.map((feature) => (
-                      <div
-                        key={feature}
-                        className="flex items-center text-gray-600"
-                      >
+                      <div key={feature} className="flex items-center ">
                         <div className="w-2 h-2 bg-primary rounded-full mr-3" />
                         <span>{feature}</span>
                       </div>
                     ))}
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
