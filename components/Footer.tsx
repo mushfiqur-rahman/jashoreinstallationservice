@@ -132,7 +132,15 @@ const Footer: React.FC = () => {
         <div className="bg-indigo-600 text-center py-4">
           <p>
             &copy; Copyright 2024 - {date}. Jashore Installation Service. All
-            rights reserved.
+            rights reserved. | Developed by{" "}
+            <Link
+              href="https://mushfiq.xyz/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-100 "
+            >
+              MUSHFIQ
+            </Link>
           </p>
         </div>
       </footer>

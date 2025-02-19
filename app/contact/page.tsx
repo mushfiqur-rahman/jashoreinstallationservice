@@ -2,9 +2,10 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import ContactImg from "../../public/contact.jpg";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+import Link from "next/link";
 
 const Contact: React.FC = () => {
   return (
@@ -48,24 +49,49 @@ const Contact: React.FC = () => {
 
                   <p>IT Service Near at Your Home</p>
                   <p className="font-mono">
-                    Address: Hushtola Bou Bazar, Bokchor,Jashore, Khulna - 7400
+                    Address: Hushtola Bou Bazar, Bokchor,Jashore, Khulna,
+                    Bangladesh - 7400
                   </p>
                 </div>
 
                 <div>
-                  <p className="uppercase pt-8">Connect with me</p>
+                  <p className="uppercase pt-8">Connect with us</p>
                   <div className="flex items-center justify-between py-4">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaLinkedinIn />
+                      <Link
+                        href="https://www.facebook.com/JashoreInstallationService"
+                        target="_blank"
+                        rel="noreferrer nofollow"
+                      >
+                        <FaFacebook />
+                      </Link>
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaGithub />
+                      <Link
+                        href="https://www.linkedin.com/company/jashore-installation-service"
+                        target="_blank"
+                        rel="noreferrer nofollow"
+                      >
+                        <FaLinkedinIn />
+                      </Link>
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <AiOutlineMail />
+                      <Link
+                        href="https://x.com/jashoreis"
+                        target="_blank"
+                        rel="noreferrer nofollow"
+                      >
+                        <FaXTwitter />
+                      </Link>
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <BsFillPersonLinesFill />
+                      <Link
+                        href="https://www.youtube.com/@jashore-installation-service"
+                        target="_blank"
+                        rel="noreferrer nofollow"
+                      >
+                        <FaYoutube />
+                      </Link>
                     </div>
                   </div>
                 </div>

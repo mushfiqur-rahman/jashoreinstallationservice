@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { GiCctvCamera } from "react-icons/gi";
 import { GoZap } from "react-icons/go";
-import { IoSunnyOutline } from "react-icons/io5";
+import { GiSolarPower } from "react-icons/gi";
 import { FaLaptop } from "react-icons/fa";
 
 const services = [
@@ -20,7 +20,7 @@ const services = [
       "Complete electrical solutions for residential and commercial properties with safety standards.",
   },
   {
-    icon: <IoSunnyOutline className="w-8 h-8" />,
+    icon: <GiSolarPower className="w-8 h-8" />,
     title: "Solar Panel Setup",
     description:
       "Sustainable energy solutions with expert solar panel installation and maintenance.",
