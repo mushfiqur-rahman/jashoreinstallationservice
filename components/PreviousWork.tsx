@@ -1,5 +1,5 @@
 "use client";
-
+import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -8,8 +8,7 @@ const projects = [
     id: 1,
     title: "Corporate CCTV Installation",
     category: "CC Camera",
-    image:
-      "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+    image: "",
     description:
       "Complete CCTV system installation for a corporate office building",
   },
@@ -17,24 +16,21 @@ const projects = [
     id: 2,
     title: "Solar Power Plant",
     category: "Solar Panel",
-    image:
-      "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+    image: "",
     description: "1MW solar power plant installation for industrial complex",
   },
   {
     id: 3,
     title: "Smart Home Automation",
     category: "Electrical",
-    image:
-      "https://unsplash.com/photos/a-house-with-a-solar-panel-on-the-roof-8kYf4o8C8wY?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+    image: "",
     description: "Complete smart home electrical system installation",
   },
   {
     id: 4,
     title: "Network Infrastructure",
     category: "IT Solution",
-    image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+    image: "",
     description: "Enterprise-level network infrastructure setup",
   },
 ];
@@ -43,7 +39,7 @@ const PreviousWork = () => {
   return (
     <>
       <section className="py-20 ">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
