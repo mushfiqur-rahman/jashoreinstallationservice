@@ -21,7 +21,7 @@ interface TeamMemberCardProps {
 
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
   return (
-    <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transition-shadow duration-300">
+    <div className="max-w-sm rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
       {/* Profile Picture */}
       <img
         className="w-full h-48 object-cover"
@@ -32,9 +32,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
       {/* Name and Designation */}
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2 text-center">{member.name}</div>
-        <p className="text-gray-700 text-base text-center">
-          {member.designation}
-        </p>
+        <p className=" text-base text-center">{member.designation}</p>
       </div>
 
       {/* Social Links - Centered */}
