@@ -1,12 +1,18 @@
+"use client";
 import Link from "next/link";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import { BsTwitterX, BsYoutube } from "react-icons/bs";
 import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 const Footer: React.FC = () => {
-  const current: Date = new Date(); // Explicitly type `current` as `Date`
-  const date: string = `${current.getFullYear()}`;
+  const [year, setYear] = useState<string>("");
+
+  useEffect(() => {
+    const currentYear = new Date().getFullYear().toString();
+    setYear(currentYear);
+  }, []);
 
   return (
     <>
@@ -131,13 +137,13 @@ const Footer: React.FC = () => {
         {/* Small Footer */}
         <div className="bg-indigo-600 text-center py-4">
           <p>
-            &copy; Copyright 2024 - {date}. Jashore Installation Service. All
+            &copy; Copyright 2024 - {year}. Jashore Installation Service. All
             rights reserved. | Developed by{" "}
             <Link
               href="https://mushfiq.xyz/"
               target="_blank"
               rel="noreferrer"
-              className="text-slate-100 "
+              className="text-slate-100"
             >
               MUSHFIQ
             </Link>
