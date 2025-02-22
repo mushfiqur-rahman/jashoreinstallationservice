@@ -24,10 +24,11 @@ const Footer: React.FC = () => {
             <div className="items-center">
               <Image src="/logo.png" alt="logo" width={50} height={50} />
             </div>
-            <h2 className="text-2xl font-bold">Jashore Installation Service</h2>
+            <h2 className="text-2xl font-bold">যশোর ইন্সটলেশন সার্ভিস</h2>
             <p className="mt-2">
-              Providing top-notch installation services for security systems,
-              electrical work, and IT solutions.
+              অফিস নেটওয়ার্ক, সিসি ক্যামেরা ইন্সটল এবং সমস্যা সমাধান, সোলার
+              প্যানেল, ইলেকট্রিক লাইনের কাজ, ওয়েব সাইট ডেভেলপমেন্ট সহ সকল ধরনের
+              প্রযুক্তি সেবা প্রদানে আমরা সচেষ্ট।
             </p>
           </div>
 
@@ -35,17 +36,17 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Menu</h3>
             <ul className="space-y-2">
-              <li>
-                <Link href="/">Home</Link>
+              <li className="cursor-pointer">
+                <Link href="/">প্রচ্ছদ</Link>
               </li>
-              <li>
-                <Link href="/service">Service</Link>
+              <li className="cursor-pointer">
+                <Link href="/service">সেবাসমূহ</Link>
               </li>
-              <li>
-                <Link href="/blog">Blog</Link>
+              <li className="cursor-pointer">
+                <Link href="/blog">ব্লগ</Link>
               </li>
-              <li>
-                <Link href="/contact">Contact</Link>
+              <li className="cursor-pointer">
+                <Link href="/contact">যোগাযোগ</Link>
               </li>
             </ul>
           </div>
