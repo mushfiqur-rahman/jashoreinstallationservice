@@ -45,7 +45,7 @@ const projects = [
 const PreviousWork = () => {
   return (
     <>
-      <section className="py-20 ">
+      <section id="work" className="py-20 ">
         <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

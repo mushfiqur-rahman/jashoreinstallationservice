@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        kalpurush: ["Kalpurush", "sans-serif"],
+        english: ["Helvetica", "Arial", "sans-serif"],
+      },
     },
   },
   plugins: [],
