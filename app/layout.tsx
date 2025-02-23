@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "যশোর ইন্সটলেশন সার্ভিস",
+  title: "Jashore Installation Service",
   description:
     "যশোর এবং পার্শ্ববর্তী এলাকায় সিসি ক্যামেরা, সোলার, ইলেকট্রিক, অফিস এবং ইন্ডাস্ট্রির নেটওয়ার্ক সেটাপ, আইটি সেবা প্রদান কারি প্রতিষ্ঠান। ",
   keywords:
