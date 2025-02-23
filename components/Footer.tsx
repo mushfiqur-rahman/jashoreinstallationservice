@@ -22,7 +22,9 @@ const Footer: React.FC = () => {
           {/* Logo and Description (2 cols) */}
           <div className="md:col-span-2">
             <div className="items-center">
-              <Image src="/logo.png" alt="logo" width={50} height={50} />
+              <Link href="/">
+                <Image src="/logo.png" alt="logo" width={50} height={50} />
+              </Link>
             </div>
             <h2 className="text-2xl font-bold">যশোর ইন্সটলেশন সার্ভিস</h2>
             <p className="mt-2">
