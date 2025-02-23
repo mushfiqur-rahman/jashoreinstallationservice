@@ -11,11 +11,11 @@ const Contact: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Contact</title>
+        <title>Contact - </title>
         <link rel="canonical" href="/contact" />
         <meta
           name="description"
-          content="CC Camera Install and Maintenance, Electric, Office Network Install, Solar System, website Develop & Maintenance. Service Provider Remotely or Onsite."
+          content="যশোর এবং পার্শ্ববর্তী এলাকায় সিসি ক্যামেরা, সোলার, ইলেকট্রিক, অফিস এবং ইন্ডাস্ট্রির নেটওয়ার্ক সেটাপ, আইটি সেবা প্রদান কারি প্রতিষ্ঠান। "
         />
         <meta
           name="keywords"
