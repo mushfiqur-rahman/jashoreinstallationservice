@@ -6,7 +6,7 @@ import { IconHome, IconMessage, IconUser, IconBook } from "@tabler/icons-react";
 const Navbar = () => {
   const navItems = [
     {
-      name: "মূল পাতা",
+      name: "প্রচ্ছদ",
       link: "/",
       icon: <IconHome className="h-4 w-4 text-neutral-100 dark:text-white" />,
     },

@@ -2,35 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Kalpurush";
-  src: url("/fonts/kalpurush.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Helvetica";
-  src: url("/fonts/helvetica.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-:root {
-  --font-bangla: "Kalpurush", sans-serif;
-  --font-english: "Helvetica", sans-serif;
-}
-
-body {
-  font-family: var(--font-bangla);
-}
-
-[lang="en"] body {
-  font-family: var(--font-english);
-}
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -46,7 +17,6 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Kalpurush", sans-serif;
 }
 
 .no-visible-scrollbar {

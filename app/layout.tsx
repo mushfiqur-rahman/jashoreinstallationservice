@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
-
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import ScrollProgress from "@/components/ScrollProgress";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+const popins = Poppins({
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Jashore Installation Service",
@@ -66,10 +72,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="bn" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <GoogleAnalytics gaId="G-SZB80V6SBQ" />
       <GoogleTagManager gtmId="GTM-NDMM4NHD" />
-      <body className={` antialiased`}>
+      <body className={`${popins.variable} antialiased`}>
         <ScrollProgress />
         <Navbar />
         <main>{children}</main>
