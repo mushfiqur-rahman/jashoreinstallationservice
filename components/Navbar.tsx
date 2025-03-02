@@ -6,22 +6,22 @@ import { IconHome, IconMessage, IconUser, IconBook } from "@tabler/icons-react";
 const Navbar = () => {
   const navItems = [
     {
-      name: "প্রচ্ছদ",
+      name: "Home",
       link: "/",
       icon: <IconHome className="h-4 w-4 text-neutral-100 dark:text-white" />,
     },
     {
-      name: "সেবাসমূহ",
+      name: "Service",
       link: "/service",
       icon: <IconUser className="h-4 w-4 text-neutral-100 dark:text-white" />,
     },
     {
-      name: "তথ্য",
+      name: "Blog",
       link: "/blog",
       icon: <IconBook className="h-4 w-4 text-neutral-100 dark:text-white" />,
     },
     {
-      name: "যোগাযোগ",
+      name: "Contact",
       link: "/contact",
       icon: (
         <IconMessage className="h-4 w-4 text-neutral-100 dark:text-white" />
