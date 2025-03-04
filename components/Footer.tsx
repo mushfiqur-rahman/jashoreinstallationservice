@@ -26,11 +26,10 @@ const Footer: React.FC = () => {
                 <Image src="/logo.png" alt="logo" width={50} height={50} />
               </Link>
             </div>
-            <h2 className="text-2xl font-bold">যশোর ইন্সটলেশন সার্ভিস</h2>
+            <h2 className="text-2xl font-bold">Jashore Installation Service</h2>
             <p className="mt-2">
-              অফিস নেটওয়ার্ক, সিসি ক্যামেরা ইন্সটল এবং সমস্যা সমাধান, সোলার
-              প্যানেল, ইলেকট্রিক লাইনের কাজ, ওয়েব সাইট ডেভেলপমেন্ট সহ সকল ধরনের
-              প্রযুক্তি সেবা প্রদানে আমরা সচেষ্ট।
+              CC Camera, IP Camera, Solar Sytem, Industry Network Configuration,
+              Business mail configuration related anything, we eagerly help you.
             </p>
           </div>
 
@@ -39,16 +38,16 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mb-4">Menu</h3>
             <ul className="space-y-2">
               <li className="cursor-pointer">
-                <Link href="/">প্রচ্ছদ</Link>
+                <Link href="/">Home</Link>
               </li>
               <li className="cursor-pointer">
-                <Link href="/service">সেবাসমূহ</Link>
+                <Link href="/service">Services</Link>
               </li>
               <li className="cursor-pointer">
-                <Link href="/blog">ব্লগ</Link>
+                <Link href="/blog">Blog</Link>
               </li>
               <li className="cursor-pointer">
-                <Link href="/contact">যোগাযোগ</Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </div>
