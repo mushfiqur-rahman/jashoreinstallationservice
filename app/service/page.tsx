@@ -188,7 +188,7 @@ const service: React.FC = () => {
                 key={service.title}
                 className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <div className="p-8">
+                <div className="p-8 border">
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-lg bg-primary/10 text-primary mb-6">
                     {service.icon}
                   </div>
