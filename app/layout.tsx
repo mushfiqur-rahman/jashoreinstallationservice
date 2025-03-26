@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
-import { Poppins } from "next/font/google";
+import { Anek_Bangla } from "next/font/google";
 import "./globals.css";
 import ScrollProgress from "@/components/ScrollProgress";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const popins = Poppins({
+const popins = Anek_Bangla({
   weight: ["400", "500", "600", "700", "800"],
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "যশোর এবং পার্শ্ববর্তী এলাকায় সিসি ক্যামেরা, সোলার, ইলেকট্রিক, অফিস এবং ইন্ডাস্ট্রির নেটওয়ার্ক সেটাপ, আইটি সেবা প্রদান কারি প্রতিষ্ঠান। ",
   keywords:
-    "যশোরে সিসি ক্যামেরা সেটআপ, সোলার, ইলেকট্রিক,যশোরে সোলার সিস্টেম ইনস্টলেশন সেবা,যশোরে অফিস এবং ইন্ডাস্ট্রির নেটওয়ার্ক সেটাপ, যশোরে আইটি সেবা প্রদান কারি প্রতিষ্ঠান,যশোরে ইলেকট্রিশিয়ান যশোর, ওয়েব সাইট যশোর, সিসি ক্যামেরা যশোর, আইটি সার্ভিস যশোর",
+    "যশোরে সিসি ক্যামেরা সেটআপ, আইপি ক্যামেরা, ল্যান ক্যাবল তৈরি, রাউটার কনফিগারেশন, সার্ভার র‍্যাক,সোলার, ইলেকট্রিক,যশোরে সোলার সিস্টেম ইনস্টলেশন সেবা,যশোরে অফিস এবং ইন্ডাস্ট্রির নেটওয়ার্ক সেটাপ, যশোরে আইটি সেবা প্রদান কারি প্রতিষ্ঠান,যশোরে ইলেকট্রিশিয়ান যশোর, ওয়েব সাইট যশোর, সিসি ক্যামেরা যশোর, আইটি সার্ভিস যশোর, cctv jashore jessore, ip camera jashore, ip camera jessore, solar panel jashore, solar panel jessore, electrician jashore, electrician jessore, lan cable jahsore, lan cable jessore, it service jashore, it service jessore, home network jashroe, home network jesssore, internet server jashore, internet server jessore, cctv maintenance jashore, cctv maintenance jessore",
   applicationName: "IT Service Near at You",
   authors: [{ name: "যশোর ইন্সটলেশন সার্ভিস" }],
   creator: "যশোর ইন্সটলেশন সার্ভিস",
@@ -72,7 +72,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="bn" suppressHydrationWarning>
       <GoogleAnalytics gaId="G-SZB80V6SBQ" />
       <GoogleTagManager gtmId="GTM-NDMM4NHD" />
       <body className={`${popins.variable} antialiased`}>

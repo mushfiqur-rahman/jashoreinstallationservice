@@ -26,10 +26,10 @@ const Footer: React.FC = () => {
                 <Image src="/logo.png" alt="logo" width={50} height={50} />
               </Link>
             </div>
-            <h2 className="text-2xl font-bold">Jashore Installation Service</h2>
+            <h2 className="text-2xl font-bold">যশোর ইন্সটলেশন সার্ভিস</h2>
             <p className="mt-2">
-              CC Camera, IP Camera, Solar Sytem, Industry Network Configuration,
-              Business mail configuration related anything, we eagerly help you.
+              সিসি ক্যামেরা, আইপি ক্যামেরা, ইলেকট্রিক, সোলার সিস্টেম, অফিস
+              নেটওয়ার্ক সুচারুভাবে ইন্সটল করার নির্ভর যোগ্য প্রতিষ্ঠান।
             </p>
           </div>
 

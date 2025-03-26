@@ -20,6 +20,14 @@ const blogPosts = [
     readers: 890,
     slug: "solar-system-installation",
   },
+  {
+    title: "কিভাবে শক্তিশালী পাওসোয়ার্ড তৈরি করবেন?",
+    publishedDate: "Feb 12, 2025",
+    description: "Learn how to set up a solar power system for your home...",
+    category: "strong password",
+    readers: 890,
+    slug: "solar-system-installation",
+  },
 ];
 
 const blog = () => {
