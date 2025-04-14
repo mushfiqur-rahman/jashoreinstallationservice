@@ -6,6 +6,7 @@ import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import Link from "next/link";
+import GoogleMap from "@/components/GoogleMap";
 
 const Contact: React.FC = () => {
   return (
@@ -44,14 +45,11 @@ const Contact: React.FC = () => {
 
                 <div className="text-center md:text-start">
                   <h2 className="py-2 text-3xl text-indigo-500">
-                    Jashore Installation Service
+                    যশোর ইন্সটলেশন সার্ভিস
                   </h2>
 
                   <p>IT Service Near at Your Home</p>
-                  <p className="font-mono">
-                    Address: Hushtola Bou Bazar, Bokchor,Jashore, Khulna,
-                    Bangladesh - 7400
-                  </p>
+                  <p>ঠিকানাঃ হুশতলা বউ বাজার, বকচর, যশোর - ৭৪০০</p>
                 </div>
 
                 <div>
@@ -102,18 +100,20 @@ const Contact: React.FC = () => {
               <div className="p-4">
                 <form>
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Your Name</label>
+                    <label className="uppercase text-sm py-2">আপনার নাম</label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="name"
-                      placeholder="Your Full Name"
+                      placeholder="আপনার সম্পূর্ন নাম"
                       required
                     />
                   </div>
 
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Your Email</label>
+                    <label className="uppercase text-sm py-2">
+                      আপনার ইমেইল
+                    </label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="email"
@@ -124,7 +124,7 @@ const Contact: React.FC = () => {
                   </div>
 
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Message</label>
+                    <label className="uppercase text-sm py-2">বার্তা</label>
                     <textarea
                       rows={10}
                       className="border-2 rounded-lg p-3 flex border-gray-300"
@@ -144,6 +144,7 @@ const Contact: React.FC = () => {
               </div>
             </div>
           </div>
+          <GoogleMap />
         </div>
       </div>
     </>

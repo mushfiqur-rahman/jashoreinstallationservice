@@ -1,51 +1,38 @@
 "use client";
-import React from "react";
-
 import Link from "next/link";
+import Image from "next/image";
 
-interface BlogPostProps {
-  title: string;
-  publishedDate: string;
-  description: string;
-  category: string;
-  readers: number;
-  slug: string;
-}
-
-const BlogCard: React.FC<BlogPostProps> = ({
+export default function BlogCard({
   title,
   publishedDate,
   description,
   category,
   readers,
   slug,
-}) => {
+  content,
+  image,
+}: any) {
   return (
-    <Link href={`/blog/${slug}`} className="block">
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 cursor-pointer">
-        {/* Category Tag */}
-        <span className="bg-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
-          {category}
-        </span>
-
-        {/* Post Title */}
-        <h2 className="text-xl font-bold mt-3 text-gray-900 dark:text-white">
-          {title}
-        </h2>
-
-        {/* Meta Information */}
-        <div className="flex justify-between items-center text-gray-500 dark:text-gray-400 text-sm mt-2">
-          <p>{publishedDate}</p>
-          <p>{readers} Readers</p>
-        </div>
-
-        {/* Short Description */}
-        <p className="text-gray-600 dark:text-gray-300 mt-3 line-clamp-3">
-          {description}
+    <Link
+      href={`/blog/${slug}`}
+      className="block rounded-lg shadow-lg overflow-hidden transition hover:shadow-xl"
+    >
+      <Image
+        src={image}
+        alt={title}
+        width={600}
+        height={400}
+        className="w-full h-48 object-cover"
+      />
+      <div className="p-4">
+        <h2 className="text-xl font-semibold">{title}</h2>
+        <p className="text-gray-600 text-sm">
+          {publishedDate} • {readers} readers
         </p>
+        <p className="text-gray-700 mt-2">{description}</p>
+        <p className="text-blue-600 mt-2 font-semibold">{category}</p>
+        <p className="text-blue-600 mt-2 font-semibold">{content}</p>
       </div>
     </Link>
   );
-};
-
-export default BlogCard;
+}

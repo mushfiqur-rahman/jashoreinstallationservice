@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
-import { Anek_Bangla } from "next/font/google";
+import { Noto_Sans_Bengali } from "next/font/google";
 import "./globals.css";
 import ScrollProgress from "@/components/ScrollProgress";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const popins = Anek_Bangla({
-  weight: ["400", "500", "600", "700", "800"],
+const popins = Noto_Sans_Bengali({
+  weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
