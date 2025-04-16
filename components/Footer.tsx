@@ -38,30 +38,32 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mb-4">Menu</h3>
             <ul className="space-y-2">
               <li className="cursor-pointer">
-                <Link href="/">Home</Link>
+                <Link href="/">হোম</Link>
               </li>
               <li className="cursor-pointer">
-                <Link href="/service">Services</Link>
+                <Link href="/service">সেবাসমূহ</Link>
               </li>
               <li className="cursor-pointer">
-                <Link href="/blog">Blog</Link>
+                <Link href="/blog">ব্লগ</Link>
               </li>
               <li className="cursor-pointer">
-                <Link href="/contact">Contact</Link>
+                <Link href="/contact">যোগাযোগ</Link>
               </li>
             </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Services</h3>
+            <h3 className="text-xl font-semibold mb-4">সেবাসমূহ</h3>
             <ul className="space-y-2">
-              <li>CC Camera</li>
-              <li>IP Camera</li>
-              <li>Electric Work</li>
-              <li>Solar System</li>
-              <li>Website Development</li>
-              <li>Apps Development</li>
+              <li>সিসি ক্যামেরা ইন্সটল</li>
+              <li>সিসি ক্যামেরা দেখাশোনা</li>
+              <li>আইপি ক্যামেরা</li>
+              <li>ইলেক্ট্রিশিয়ানের কাজ</li>
+              <li>সোলার প্যানেল সেটাপ</li>
+              <li>সোলার প্যানেল আইপিসএস সেটাপ</li>
+              <li>ওয়েব সাইট তৈরী</li>
+              <li>মোবাইল এপ্স তৈরী</li>
             </ul>
           </div>
 
@@ -70,10 +72,10 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/privacy-policy">Privacy Policy</Link>
+                <Link href="/privacy-policy">প্রাইভেসি পলিসি</Link>
               </li>
               <li>
-                <Link href="/terms">Terms of Service</Link>
+                <Link href="/terms">শর্তাবলি</Link>
               </li>
             </ul>
           </div>

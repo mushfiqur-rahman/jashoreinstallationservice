@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">কেন আমাদের থেকে সেবা নিবেন</h2>
           <p className="text-lg max-w-3xl mx-auto">
             We take pride in delivering exceptional service quality and
             maintaining high professional standards in all our work.
