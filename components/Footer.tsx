@@ -139,10 +139,9 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Small Footer */}
-        <div className="bg-indigo-600 text-center py-4">
+        <div className="bg-gray-400 text-center py-4">
           <p>
-            &copy; Copyright 2024 - {year}. Jashore Installation Service. All
-            rights reserved. | Developed by{" "}
+            &copy; Copyright 2024 - {year}. All rights reserved. | Developed by{" "}
             <Link
               href="https://mushfiq.xyz/"
               target="_blank"
